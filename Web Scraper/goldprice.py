@@ -6,7 +6,7 @@ print("Searching...")
 
 
 try:
-    data = requests.get("https://www.fresherslive.com/gold-rate-today/"+city) 
+    data = requests.get("https://www.fresherslive.com/gold-rate-today/"+city.lower()) 
 
     soup = BS(data.text, 'html.parser') 
 
