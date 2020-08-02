@@ -4,6 +4,7 @@ import winsound                         #For Beeping Sounds
 import win10toast                       #For Desktop Notifications
 import time                             #For Sleep
 from twilio.rest import Client          #For Twilio API
+from datetime import datetime           #For date and time
 
 
 #Twilio API Information
@@ -48,7 +49,10 @@ while(1):
         
         #For external file
         tosave="1gm 22k Price in " + city.upper().capitalize()+ ": Rs."+price.split('₹')[1]+" change: "+change
+        now=datetime.now()
+        s1=now.strftime("%m-%d-%Y , %H:%M:%S ")
         file_i=open("data.txt","a")
+        tosave="on "+s1+tosave
         file_i.write(tosave+'\n')
         file_i.close()
 
