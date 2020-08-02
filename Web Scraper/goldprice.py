@@ -23,9 +23,10 @@ try:
 except:
     message=("Not Found!")
 
-file_i=open("data.txt","a")
-file_i.write(message)
-file_i.close()
+if(message!="Not Found!"):
+  file_i=open("data.txt","a")
+  file_i.write(message)
+  file_i.close()
 print(message)
 
 
