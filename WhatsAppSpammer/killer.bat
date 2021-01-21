@@ -1,2 +1,0 @@
-tskill notepad
-pause
