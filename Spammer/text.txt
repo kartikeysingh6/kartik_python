@@ -1,0 +1,3 @@
+First line is text 2nd line is no. of times it'll be spammed, 3rd line is gap between spamming in seconds
+500
+0.2
