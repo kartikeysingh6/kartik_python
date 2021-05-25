@@ -1,0 +1,48 @@
+from gtts import gTTS
+from tkinter import *
+from PIL import ImageTk, Image
+import requests
+import json
+import playsound
+import random
+import threading
+import os, os.path
+
+randimg=random.randint( 1,len(os.listdir("imgs/")) )
+response = requests.get("https://official-joke-api.appspot.com/random_joke")
+setup=response.json()['setup']
+punch=response.json()['punchline']
+
+def pun():
+	setupop=gTTS(text=punch, lang="en", slow=True)
+	setupop.save("punch.mp3")
+	label1=Label(root, text=punch)
+	label1.pack(pady=8)
+	playsound.playsound('punch.mp3', True)
+
+	playsound.playsound('datumtss.mp3', True)
+
+def set():
+	setupop=gTTS(text=setup, lang="en", slow=True)
+	setupop.save("setup.mp3")
+	playsound.playsound('setup.mp3', True)
+	pun()
+
+root=Tk()
+root.title("Cringe Jokes")
+root.geometry("480x520")
+root.iconbitmap("favicon.ico")
+
+cringe=Label(root, text="Cringe Jokes", fg="blue")
+cringe.pack(pady=8)
+cringe.config(font=('Helvetica bold',30))	
+
+myimg= ImageTk.PhotoImage(Image.open("imgs/"+str(randimg)+".jpg"))
+imglbl= Label(image=myimg)
+imglbl.pack(pady=8)
+
+threading.Thread(target=set).start()
+label1=Label(root, text=setup)
+label1.pack(pady=8)
+
+root.mainloop()
