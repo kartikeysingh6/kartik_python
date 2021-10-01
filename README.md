@@ -16,14 +16,15 @@ Contributions are always welcome!
 
 ## Give Feedback
 
-Give feedback about how you feel about this repository. 
-Contact me:
-[<img align="left" alt="Notepad Tricks" width="30px" src="https://img.icons8.com/office/48/000000/globe.png" />][website]
-[<img align="left" alt="Kartikey's YouTube" width="30px" src="https://img.icons8.com/color/48/000000/youtube-play.png" />][youtube]
-[<img align="left" alt="Kartikey's Twitter" width="30px" src="https://img.icons8.com/color/48/000000/twitter.png" />][twitter]
-[<img align="left" alt="Kartikey's LinkedIn" width="30px" src="https://img.icons8.com/color/48/000000/linkedin.png"/>][linkedin]
-[<img align="left" alt="Kartikey's Instagram" width="30px" src="https://img.icons8.com/fluency/48/000000/instagram-new.png" />][instagram]
-[<img align="left" alt="Kartikey's Facebook" width="30px" src="https://img.icons8.com/color/48/000000/facebook-new.png" />][fb]
+Give feedback about how you feel about this repository.
+CONTACT ME:
+<br><br>
+[<img align="left" alt="Notepad Tricks" width="34px" src="https://img.icons8.com/office/48/000000/globe.png" />][website]
+[<img align="left" alt="Kartikey's YouTube" width="34px" src="https://img.icons8.com/color/48/000000/youtube-play.png" />][youtube]
+[<img align="left" alt="Kartikey's Twitter" width="34px" src="https://img.icons8.com/color/48/000000/twitter.png" />][twitter]
+[<img align="left" alt="Kartikey's LinkedIn" width="34px" src="https://img.icons8.com/color/48/000000/linkedin.png"/>][linkedin]
+[<img align="left" alt="Kartikey's Instagram" width="34px" src="https://img.icons8.com/fluency/48/000000/instagram-new.png" />][instagram]
+[<img align="left" alt="Kartikey's Facebook" width="34px" src="https://img.icons8.com/color/48/000000/facebook-new.png" />][fb]
 
 
 [website]: https://coolnotepad.webs.com
