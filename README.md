@@ -16,7 +16,7 @@ Contributions are always welcome!
 
 ## Give Feedback
 
-You can also give feedback about how you feel about this repository. 
+Give feedback about how you feel about this repository. 
 Contact me:
 [<img align="left" alt="Notepad Tricks" width="30px" src="https://img.icons8.com/office/48/000000/globe.png" />][website]
 [<img align="left" alt="Kartikey's YouTube" width="30px" src="https://img.icons8.com/color/48/000000/youtube-play.png" />][youtube]
