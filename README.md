@@ -1,8 +1,8 @@
 <img src="pyicon.png" align="right" />
 
-# Awesome README [![Awesome]
+# PYTHON PROJECT for EVERYONE 😄
 
-This is open-source Python repository feel free to upload your own python projects, don't forget to star and fork this repository. 😄
+This is open-source Python repository feel free to upload your own python projects, don't forget to star and fork this repository. 
 Highly recommended to use for new contibutors during Hacktoberfest 2021
 
 ## Contribution Guidelines
