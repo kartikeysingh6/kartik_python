@@ -1,0 +1,14 @@
+.flex-box-row {
+    display:flex;
+    padding : 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#heading{
+    text-shadow: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 550;
+    font-size: xx-large;
+    text-align: left;
+}

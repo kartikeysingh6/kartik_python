@@ -1,0 +1,145 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fityfeed</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"0>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+</head>
+<body>
+    {% include 'navbar.html' %}
+    <br>
+    <br>
+    <div class="container">
+    {% block content %}
+        <div class="flex-box-row">
+            <h5 id="heading">CUSTOMERS:</h5>
+            <br>
+            <br>
+            <div class="card card-body">
+               <table class="table table-sm">
+                    <tr>
+                        <th>Customer</th>
+                        <th>Email</th>
+                    </tr>
+                    {% for cust in customers %}
+                    <tr>
+                        <td>{{cust.name}} </td>
+                        <td> {{cust.email}} </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+        <br><br>
+    <h4>List of available food items:</h4>
+<!------------------------->
+        <div class="flex-box-row">
+            <h5 id="heading">Breakfast</h5>
+               <table class="table table-sm">
+                    <tr>
+                        <th>Name</th>
+                        <th>Carbs</th>
+                        <th>Fats</th>
+                        <th>Protien</th>
+                        <th>Calorie</th>
+                        
+                    </tr>
+                   {% for items in breakfast %}
+                    <tr>
+                        <td>{{items.name}} </td>
+                        <td>{{items.carbohydrate}} </td>
+                        <td>{{items.fats}} </td>
+                        <td>{{items.protein}} </td>
+                        <td>{{items.calorie}} </td>
+                        </tr>
+                        
+                    {% endfor %}
+                </table>
+        </div>
+<br>
+<!------------------------------------------------------------------------------------------------------->
+        <div class="flex-box-row">
+            <h5 id="heading">Lunch</h5>
+             <table class="table table-sm">
+                    <tr>
+                        <th>Name</th>
+                        <th>Carbs</th>
+                        <th>Fats</th>
+                        <th>Protien</th>
+                        <th>Calorie</th>
+                        
+                    </tr>
+                   {% for items in lunch %}
+                    <tr>
+                        <td>{{items.name}} </td>
+                        <td>{{items.carbohydrate}} </td>
+                        <td>{{items.fats}} </td>
+                        <td>{{items.protein}} </td>
+                        <td>{{items.calorie}} </td>
+                        </tr>
+                        
+                    {% endfor %}
+                </table>
+        </div>
+        <br>
+<!------------------------------------------->
+        <div class="flex-box-row">
+            <h5 id="heading">Snacks</h5>
+                <table class="table table-sm">
+                    <tr>
+                        <th>Name</th>
+                        <th>Carbs</th>
+                        <th>Fats</th>
+                        <th>Protien</th>
+                        <th>Calorie</th>
+                        
+                    </tr>
+                   {% for items in snacks %}
+                    <tr>
+                        <td>{{items.name}} </td>
+                        <td>{{items.carbohydrate}} </td>
+                        <td>{{items.fats}} </td>
+                        <td>{{items.protein}} </td>
+                        <td>{{items.calorie}} </td>
+                        </tr>
+                        
+                    {% endfor %}
+                </table>
+        </div>
+        <br>
+<!-------------------------------------->
+        <div class="flex-box-row">
+            <h5 id="heading">Dinner</h5>
+                <table class="table table-sm">
+                    <tr>
+                        <th>Name</th>
+                        <th>Carbs</th>
+                        <th>Fats</th>
+                        <th>Protien</th>
+                        <th>Calorie</th>
+                        
+                    </tr>
+                   {% for items in dinner %}
+                    <tr>
+                        <td>{{items.name}} </td>
+                        <td>{{items.carbohydrate}} </td>
+                        <td>{{items.fats}} </td>
+                        <td>{{items.protein}} </td>
+                        <td>{{items.calorie}} </td>
+                        </tr>
+                        
+                    {% endfor %}
+                </table>
+        </div>
+<br>
+    {% endblock %}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   
+</body>
+</html>

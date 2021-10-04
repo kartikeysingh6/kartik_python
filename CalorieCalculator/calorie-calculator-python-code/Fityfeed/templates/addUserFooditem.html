@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+{% load static%}
+{% block content %}
+<head>
+    <style>
+        form{
+            border:1px solid black;
+            margin:auto;
+            padding: 40px;
+        }
+    </style>
+</head>
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" class="btn btn-success" value="submit">
+</form>
+{% endblock %}
