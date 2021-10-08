@@ -1,1 +1,2 @@
-# Wheel of Fortune game using python
+# Wheel-Of-Fortune
+The Wheel of Fortune Game using python
