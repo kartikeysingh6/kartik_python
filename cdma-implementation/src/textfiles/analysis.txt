@@ -1,0 +1,80 @@
+
+
+********** 07/10/2021 12:58:29 SENDER-4 STATS **********
+--> 8-Sender System
+--> Total Bits Transferred: 48
+--> Total Time Taken: 37.77 seconds
+--> Throughput: 1.271 bps
+********************************************************
+
+
+
+
+********** 07/10/2021 12:58:29 SENDER-6 STATS **********
+--> 8-Sender System
+--> Total Bits Transferred: 48
+--> Total Time Taken: 37.76 seconds
+--> Throughput: 1.271 bps
+********************************************************
+
+
+
+
+********** 07/10/2021 12:58:29 SENDER-1 STATS **********
+--> 8-Sender System
+--> Total Bits Transferred: 48
+--> Total Time Taken: 37.82 seconds
+--> Throughput: 1.269 bps
+********************************************************
+
+
+
+
+********** 07/10/2021 12:58:29 SENDER-5 STATS **********
+--> 8-Sender System
+--> Total Bits Transferred: 48
+--> Total Time Taken: 37.82 seconds
+--> Throughput: 1.269 bps
+********************************************************
+
+
+
+
+********** 07/10/2021 12:58:29 SENDER-7 STATS **********
+--> 8-Sender System
+--> Total Bits Transferred: 48
+--> Total Time Taken: 37.82 seconds
+--> Throughput: 1.269 bps
+********************************************************
+
+
+
+
+********** 07/10/2021 12:58:29 SENDER-2 STATS **********
+--> 8-Sender System
+--> Total Bits Transferred: 48
+--> Total Time Taken: 37.82 seconds
+--> Throughput: 1.269 bps
+********************************************************
+
+
+
+
+********** 07/10/2021 12:58:29 SENDER-8 STATS **********
+--> 8-Sender System
+--> Total Bits Transferred: 48
+--> Total Time Taken: 37.82 seconds
+--> Throughput: 1.269 bps
+********************************************************
+
+
+
+
+********** 07/10/2021 12:58:29 SENDER-1 STATS **********
+--> 8-Sender System
+--> Total Bits Transferred: 48
+--> Total Time Taken: 37.82 seconds
+--> Throughput: 1.269 bps
+********************************************************
+
+
