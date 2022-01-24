@@ -1,11 +1,11 @@
 from bs4 import BeautifulSoup as BS     #For Website Grabbing
 import requests                         #For Sending Requests
-import winsound                         #For Beeping Sounds
+import winsound                         #For Beeping Sounds (pip install )
 import win10toast                       #For Desktop Notifications
 import time                             #For Sleep
+import os.path                          #To Check if file exits or not     
 from twilio.rest import Client          #For Twilio API
 from datetime import datetime           #For date and time
-
 
 #Twilio API Information
 account_sid = "SID HERE"
@@ -17,15 +17,15 @@ to="RECEIVER NO. HERE"
 def SENDAPI():
     client = Client(account_sid, auth_token)
     message = client.messages.create(to=to, from_=frm,body="GOLD PRICE DROPPED!\n"+final)
-
-while(1):
-    
+k=1
+while(k):
+    k-=1
     #City Name from city.txt if fails default is delhi
-    try:
+    if(os.path.exists('city.txt')):
         city_file=open("city.txt","r")
         city=city_file.readline().lower()
         city_file.close()
-    except:
+    else:
         city="delhi"
 
     print("Looking for gold price in "+city.capitalize()+"...")
@@ -39,11 +39,11 @@ while(1):
 
         
         #To locate the data from site
-        price = soup.find("td",class_="center-text").text
-        change = soup.findAll("td",class_="center-text")[1].text
+        price = soup.findAll("td",class_="center-text")[1].text
+        change = soup.find_all('b')[11].text
 
         #Statement to print
-        final="1gm 22k Price in " + city.upper().capitalize()+ ": "+price+" change: "+change
+        final="1g 22k Price in " + city.upper().capitalize()+ ": "+price+" change: "+change
         print(final)
 
         
@@ -59,8 +59,12 @@ while(1):
         
         #For sound effect, desktop notification and WhatsApp/SMS Alert
         if(change[0]=="-"):
-            winsound.Beep(2000, 1250) 
-            toaster = win10toast.ToastNotifier().show_toast("Gold Price DROPPED!",final , duration=5, icon_path="gold.ico")
+            winsound.Beep(2000, 1000)
+            if(os.path.exists('gold.ico')):
+                toaster = win10toast.ToastNotifier().show_toast("Gold Price DROPPED!",final , duration=5, icon_path="gold.ico")
+            else:
+                toaster = win10toast.ToastNotifier().show_toast("Gold Price DROPPED!",final , duration=5)
+            
             try:
                 #API FUNCTION CALL DISABLE THIS TO DISABLE API
                 #SENDAPI()
@@ -69,11 +73,14 @@ while(1):
                 print("\nWhatsApp Alert Failed!")
 
         if(change[0]=="+"):
-        	winsound.Beep(1000, 350)
-        	winsound.Beep(1000, 350)
-        	toaster = win10toast.ToastNotifier().show_toast("Gold Price INCREASED!",final , duration=5, icon_path="gold.ico")
+            winsound.Beep(1000, 350)
+            winsound.Beep(1000, 350)
+            if(os.path.exists('gold.ico')):
+                toaster = win10toast.ToastNotifier().show_toast("Gold Price INCREASED!",final , duration=5, icon_path="gold.ico")
+            else:
+                toaster = win10toast.ToastNotifier().show_toast("Gold Price INCREASED!",final , duration=5)
 
     except:
         print("Not Found!")
 
-    time.sleep(3600)      #Loops over every given seconds
+    time.sleep(2)      #Loops over every given seconds
