@@ -3,16 +3,16 @@
 # PYTHON PROJECT for EVERYONE 😄
 
 This is open-source Python repository feel free to upload your own python projects, don't forget to star and fork this repository. 
-Highly recommended to use for new contibutors during Hacktoberfest 2021
+Highly recommended to use for new contibutors during Hacktoberfest 2022
 
 ## Contribution Guidelines
 
 Contributions are always welcome!
 
 1. Make sure your project achieves some objective.
-2. It should not contain explicit content or offensive words
-3. Make sure it does not uses resources of computer than it is expected
-4. Explain as much as you can about what it does
+2. The project should not contain explicit content or offensive words
+3. Make sure your code/project does not uses resources of a computer more than it is expected
+4. Explain as much as you can about what your project does
 
 ## Give Feedback
 
