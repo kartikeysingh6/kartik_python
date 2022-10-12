@@ -1,5 +1,5 @@
 # Installation
-1. Beautiful Soup: pip install beautifulsoup4
-2. Requests: pip install requests
-3. Win10Toast: pip install win10toast
-4. Twilio API: pip install twilio
+- Beautiful Soup: ``` pip install beautifulsoup4 ```
+- Requests: ``` pip install requests ```
+- Win10Toast: ``` pip install win10toast ```
+- Twilio API: ``` pip install twilio ```
