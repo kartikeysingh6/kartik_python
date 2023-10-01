@@ -28,14 +28,14 @@ def colorArrSel(data,imin,curr):
 
 def bubsort(data,drawInfo,speed):
 	for p in range(len(data)-1):
-		flag=0
+		flag=False
 		for i in range(len(data)-1-p):
-			if(data[i]>data[i+1]):
+			if data[i]>data[i+1]:
 				data[i],data[i+1]=data[i+1],data[i]
-				flag+=1
+				flag = True
 				drawInfo(data,['green' if x==i or x==i+1 else lightRed for x in range(len(data))])
 				time.sleep(float(speed))
-		if(flag==0):
+		if flag:
 			break
 
 #-----------------------------------------------------------------------------------------
