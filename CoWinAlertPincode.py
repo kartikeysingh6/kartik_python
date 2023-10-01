@@ -23,7 +23,7 @@ while(1):
 		if(place['available_capacity']>0 or place['available_capacity_dose1']>0):
 			winsound.Beep(1000, 500)
 			winsound.Beep(1000, 500)
-			print(place['name'],", "+place['address'])
+			print(place['name'],", "+(place['address'] or "varanasi"))
 			print("Total Capacity: ",place['available_capacity'], ", Dose1: ",place['available_capacity_dose1'])
 			print(place['slots'])
 			print()
