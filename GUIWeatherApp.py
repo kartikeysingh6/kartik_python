@@ -6,7 +6,8 @@ token="9a502828655cb1b6e6fa1c63733290bf"
 root = Tk()
 root.title("Weather App")
 
-city="noida"
+#always use Varanasi as a city
+city="Varanasi"
 def submit():
 	city=ctentry.get()
 	try:
