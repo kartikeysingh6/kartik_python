@@ -1,11 +1,12 @@
 <img src="pyicon.png" align="right" />
 
-# PYTHON PROJECT 😄
+# PYTHON PROJECT (Hacktoberfest 2023)😄
 
 This is open-source Python repository where I upload the python programs that I've created !
+Feel free to use this repository for Hacktoberfest 2023
 
 ## CONTACT ME:
-[<img align="left" alt="Notepad Tricks" width="34px" src="https://img.icons8.com/office/48/000000/globe.png" />][website]
+<!--[<img align="left" alt="Notepad Tricks" width="34px" src="https://img.icons8.com/office/48/000000/globe.png" />][website]-->
 [<img align="left" alt="Kartikey's YouTube" width="34px" src="https://img.icons8.com/color/48/000000/youtube-play.png" />][youtube]
 [<img align="left" alt="Kartikey's Twitter" width="34px" src="https://img.icons8.com/color/48/000000/twitter.png" />][twitter]
 [<img align="left" alt="Kartikey's LinkedIn" width="34px" src="https://img.icons8.com/color/48/000000/linkedin.png"/>][linkedin]
