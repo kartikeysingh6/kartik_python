@@ -3,7 +3,12 @@
 # PYTHON PROJECT (Hacktoberfest 2023)😄
 
 This is open-source Python repository where I upload the python programs that I've created !
-Feel free to use this repository for Hacktoberfest 2023
+Feel free to use this repository for your submissions aswell during Hacktoberfest 2023
+
+# POINTS TO KEEP IN MIND
+- No spamming
+- No malicious code pull request
+- No irrelevant code (Must server some purpose)
 
 ## CONTACT ME:
 <!--[<img align="left" alt="Notepad Tricks" width="34px" src="https://img.icons8.com/office/48/000000/globe.png" />][website]-->
