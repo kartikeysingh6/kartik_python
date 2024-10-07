@@ -1,6 +1,6 @@
 <img src="pyicon.png" align="right" />
 
-# PYTHON PROJECT (Hacktoberfest 2023)😄
+# PYTHON PROJECT (Hacktoberfest)😄
 
 This is open-source Python repository where I upload the python programs that I've created !
 Feel free to use this repository for your submissions aswell during Hacktoberfest 2023
