@@ -1,3 +1,10 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Jan  3 19:50:11 2026
+
+@author: karam
+"""
+
 from tkinter import*
 from tkinter import messagebox
 import random
@@ -57,6 +64,11 @@ def clicked(r,c,m):
 			messagebox.showwarning("X Won!", "Player Won!")
 			disable()
 			w=1
+		elif(len(comp_cord) + len(user_cord) == 9): # fixed code
+			messagebox.showwarning("Game result: draw", "Game result: draw")
+			disable()
+			w=1
+                
 
 		#for computer
 		if(w!=1):
@@ -84,6 +96,9 @@ def clicked(r,c,m):
 			elif('3' in comp_cord and '5' in comp_cord and '7'  in comp_cord):
 				messagebox.showwarning("O Won!", "Computer Won!")
 				disable()
+			elif(len(comp_cord) + len(user_cord) == 9): # fixed code
+				messagebox.showwarning("Game result: draw", "Game result: draw")
+				disable()               
 
 	elif(len(user_cord)>3):
 		user_cord.append(str(m))
@@ -115,6 +130,9 @@ def clicked(r,c,m):
 		elif('3' in user_cord and '5' in user_cord and '7'  in user_cord):
 			messagebox.showwarning("X Won!", "Player Won!")
 			disable()
+		elif(len(comp_cord) + len(user_cord) == 9): # fixed code
+			messagebox.showwarning("Game result: draw", "Game result: draw")
+			disable()            
 	else:
 		clicked(r,c,m)
 
